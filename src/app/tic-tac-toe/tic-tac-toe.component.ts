@@ -25,5 +25,15 @@ export class TicTacToeComponent {
     }
   }
 
+  reset() {
+    this.currentPlayer = 'X';
+    this.winner = '';
+    this.board = [
+      ['', '', ''],
+      ['', '', ''],
+      ['', '', ''],
+    ];
+  }
+
   constructor() {}
 }

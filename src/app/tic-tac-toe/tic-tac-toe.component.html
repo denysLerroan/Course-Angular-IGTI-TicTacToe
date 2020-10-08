@@ -1,6 +1,6 @@
 <p>Jogador Atual: {{ currentPlayer }}</p>
 <p>Vencedor: {{ winner }}</p>
-<p><button>Reiniciar</button></p>
+<p><button (click)="reset()">Reiniciar</button></p>
 <table>
   <tr>
     <td (click)="play(0, 0)">{{ board[0][0] }}</td>
