@@ -14,5 +14,11 @@ export class TicTacToeComponent {
     ['', '', ''],
   ];
 
+  play(line: number, col: number) {
+    console.log(
+      `jogada na linha ${line}, coluna ${col} do jogador ${this.currentPlayer}`
+    );
+  }
+
   constructor() {}
 }
