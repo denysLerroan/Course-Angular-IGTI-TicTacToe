@@ -15,9 +15,14 @@ export class TicTacToeComponent {
   ];
 
   play(line: number, col: number) {
-    console.log(
-      `jogada na linha ${line}, coluna ${col} do jogador ${this.currentPlayer}`
-    );
+    if (this.board[line][col] == '' && this.winner == '') {
+      this.board[line][col] = this.currentPlayer;
+      if (this.currentPlayer == 'O') {
+        this.currentPlayer = 'X';
+      } else {
+        this.currentPlayer = 'O';
+      }
+    }
   }
 
   constructor() {}
